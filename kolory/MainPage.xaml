@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kolory.MainPage">
+
+    <Grid RowDefinitions="0.4*,auto,auto,auto"
+          ColumnDefinitions="0.8*,*">
+        <BoxView
+            Grid.ColumnSpan="2"
+            x:Name="box"
+            Color="Red"/>
+        
+        <Slider
+            Grid.Row="1"
+            x:Name="rSlider"
+            Maximum="255"
+            Value="0"
+            ValueChanged="redSlider"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="rLabel"
+            TextColor="Red"/>
+        
+        <Slider
+            Grid.Row="2"
+            x:Name="gSlider"
+            Maximum="255"
+            Value="0"
+            ValueChanged="greenSlider"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="gLabel"
+            TextColor="Green"
+            />
+        
+        <Slider
+            Grid.Row="3"
+            x:Name="bSlider"
+            Maximum="255"
+            Value="0"
+            ValueChanged="blueSlider"/>
+        <Label
+            Grid.Row="3"
+            Grid.Column="1"
+            x:Name="bLabel"
+            TextColor="Blue"
+            />
+
+    </Grid>
+
+</ContentPage>
